@@ -1,0 +1,239 @@
+*{
+  margin: 0;
+  padding: 0;
+  
+  
+}
+
+.nav{
+  background-color: burlywood;
+  display: inline-flex;
+  width: 100%;
+height: 75px;
+position: relative;
+z-index: 100;
+}
+
+.logo{
+  padding: 8px;
+  height: 59px;
+width: 40%;
+}
+
+.logoimg{
+  height: 60px;
+}
+
+.list{
+  margin-left: auto;
+}
+
+.listcont{
+  padding: 5px;
+  display: inline-flex;
+align-items: center;
+  height: 74px;
+  width: 53%;
+}
+
+.listitem{
+  display: inline-flex;
+height: 65px;
+padding: 10px;
+align-items: center;
+font-size: 18px;
+  transition: font-size 0.5s;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.listitem:hover{
+  background-color: cadetblue;
+  font-size: 20px;
+}
+
+/* p{
+  font-size: 18px;
+  transition: font-size 0.5s;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+} */
+/* p:hover{
+  font-size: 20px;
+} */
+
+.profileicon{
+  display: inline-flex;
+  height: 69px;
+padding: 8px;
+width: 5%;
+}
+.iconimg{
+  height: 40px;
+  width: 40px;
+margin: auto;
+}
+  
+ 
+/* 
+footer css */
+
+.footcont{
+  background-color: black;
+  position: absolute;
+  margin-bottom: 0;
+  width: 100%;
+  height: 420px;
+  display: block;
+}
+
+.chikkacont{
+  background-image: linear-gradient(#FFFFFF , #FFFFFF,#FFFFFF,#FFFFFF,#FFFFFF,#FFFFFF,#FFFFFF,#FFFFFF,#FFFFFF,#FFFFFF,#FFFFFF, #000033,#000033,#000033,#000033,#000033,#000033,#000033,#000033,#000033,#000033,#000033);
+  display: flex;
+  justify-content: center;
+}
+
+.chikka{
+  background-color: aqua;
+  position: relative;
+  width: 60%;
+  height: 120px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+  z-index: 10;
+  border-radius: 15px;
+  display: inline-flex;
+
+}
+
+.dodda{
+  background-color: #000033;
+  position: relative;
+  width: 100%;
+  height: 300px;
+  display: inline-flex;
+}
+
+.chikkatext{
+  padding-left: 40px;
+  padding-top: 25px;
+  height: 111px;
+  width: 50%;
+}
+h1{
+  padding-bottom: 10px;
+}
+
+h3{
+  display: inline-flex;
+}
+
+.bhakk{
+  padding-left: 30px;
+}
+
+.chikkabutton{
+  width: 50%;
+  display: inline-flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.regbut{
+  height: 40px;
+  width: 35%;
+  margin-right: 20px;
+  border-radius: 18px;
+  background-color: none;
+  background-color: burlywood;
+  border-color: darkgreen;
+  border-width: 3px;
+  font-size: 17px;
+}
+
+.membut{
+  height: 40px;
+  width: 35%;
+  margin-left: 20px;
+  border-radius: 18px;
+  background-color: none;
+  background-color: burlywood;
+  border-color: darkgreen;
+  border-width: 3px;
+  font-size: 17px;
+}
+
+.dodda1{
+  width: 27%;
+  padding-top: 5%;
+  padding-left: 5%;
+}
+.cllglogo{
+  display: inline-flex;
+  padding-bottom: 4%;
+}
+.clglogo{
+  height: 75px;
+  width: 75px;
+  border-radius: 100%;
+}
+
+.clgtext{
+  color: white;
+  width: 65%;
+  display: flex;
+  margin: auto;
+}
+
+.addtext{
+  color: #FFFFFF;
+  font-size: 20px;
+}
+.dodda2{
+  width: 27%;
+  padding-top: 5%;
+  padding-left: 5%;
+}
+.ieeelogo{
+  width: 100px;
+  height: 75px;
+}
+
+.dodda3{
+  margin: auto;
+  padding-top: 30px;
+}
+.subs{
+  padding-bottom: 15px ;
+}
+
+.substext{
+  color: #FFFFFF;
+  width: 100%;
+  padding-bottom: 10px;
+}
+.subsinput{
+  height: 30px;
+  width: 60%;
+  border-radius: 10px;
+  padding-left: 4px;
+}
+
+.subsbut{
+  height: 33px;
+  width: 20%;
+  border-radius: 10px;
+  margin-left: 5px;
+}
+
+.socialtext{
+  color: #FFFFFF;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.socialicon{
+  height: 50px;
+  width: 50px;
+  background-color: #FFFFFF;
+  border-radius: 20%;
+  padding-left: 10px;
+}
