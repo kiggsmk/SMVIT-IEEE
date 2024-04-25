@@ -2,7 +2,7 @@ import styles from './nav.module.css';
 import li from './linkedin.png';
 import fb from './facebook.png';
 import ig from './instagram.png'
-import {Link, Outlet } from "react-router-dom";
+import {Link} from "react-router-dom";
 import clglogo from './mvitlogo.jpg';
 import ieeeblr from './ieeeblrlogo.png';
 
