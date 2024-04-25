@@ -12,7 +12,7 @@ export default function Who(){
 
                 </div>
                 <div className={styles.botimgcont}>
-                    <img className={styles.botimg} src="https://picsum.photos/id/331/400/300"/>
+                    <img alt="ieee-mvit" className={styles.botimg} src="https://picsum.photos/id/331/400/300"/>
 
                 </div>
             </div>

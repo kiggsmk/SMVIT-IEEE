@@ -43,3 +43,32 @@ hr{
     margin: auto;
     
   }
+
+
+  .eventCont{
+    margin-top: 3%;
+  }
+  
+  .cardHolder{
+    padding: 30px;
+  }
+  .card{
+    height: 100px;
+    width: 50px;
+   
+  }
+  
+  .eventHead{
+    display: flex;
+    margin-top: 50px;
+    
+  }
+  
+  .eventHeadText{
+    margin: auto;
+    font-size: 350%;
+  }
+  
+  .eventCardsCont{
+    margin-top: 3%;
+  }
