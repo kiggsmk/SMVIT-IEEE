@@ -61,6 +61,7 @@ hr{
   .eventHead{
     display: flex;
     margin-top: 50px;
+    width: 100%;
     
   }
   
@@ -72,3 +73,88 @@ hr{
   .eventCardsCont{
     margin-top: 3%;
   }
+
+/* 
+  css for execomm profiles */
+
+  .comcont{
+    height: 850px;
+    width: 100%;
+  }
+
+ .exchead{
+    display: inline-flex;
+    width: 100%;
+    height: 16%;
+ }
+ .excheadText{
+    margin: auto;
+    font: 3em sans-serif;
+ }
+ .parentrow1{
+    display: inline-flex;
+ }
+
+ .row1{
+    display: inline-flex;
+    height: 42%;
+    width: 75%;
+    margin: auto;
+   
+ }
+
+ .row2{
+    display: inline-flex;
+    height: 42%;
+    width: 100%;
+ }
+ .profileholder1{
+    margin: 3%;
+    width: 33%;
+
+ }
+ .profileholder2{
+    margin: 3%;
+    width: 25%;
+ }
+
+
+/* 
+ profile card css */
+ .pcard{
+    height: 100%;
+    width: 100%;
+ }
+
+ .pimgcont{
+    width: 100%;
+    height: 75%;
+    display: inline-flex;
+ }
+ .pimg{
+    height: 100%;
+    width: 75%;
+    margin: auto;
+    border-radius: 100%;
+ }
+
+ .pnamecont{
+    width: 100%;
+    height: 15%;
+    display: inline-flex;
+ }
+
+ .pdesigcont{
+    width: 100%;
+    height: 10%;
+    display: inline-flex;
+ }
+
+ .pname{
+    margin: auto;
+ }
+ .pdesig{
+    margin: auto;
+ }
+
+
