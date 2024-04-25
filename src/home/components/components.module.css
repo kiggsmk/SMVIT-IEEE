@@ -1,0 +1,207 @@
+.whoheading{
+    height: 100px;
+    width: 100%;
+    display: flex;
+}
+.whobot{
+    display: inline-flex;
+    width: 100%;
+    height: 350px;
+    padding-bottom:2% ;
+}
+
+.headingtext{
+    margin: auto;
+    font-size: 350%;
+}
+
+.bottextcont{
+    display: inline-flex;
+  width: 40%;
+  padding: 5%;
+}
+
+.bottext{
+    font-size: 120%;
+    text-align: justify;
+}
+
+.botimgcont{
+    display: flex;
+  width: 60%;
+}
+.botimg{
+    margin: auto;
+    border-radius: 10px;
+}
+
+hr{
+    width: 80%;
+    height: 2px;
+    border-radius: 20px;
+    background-color: cadetblue;
+    margin: auto;
+    
+  }
+
+
+  .eventCont{
+    margin-top: 3%;
+    margin-bottom: 3%;
+    width: 100%;
+    height: 450px;
+  }
+
+  .eventHead{
+    display: flex;
+    margin-top: 50px;
+    width: 100%;
+    height: 100px;
+    
+  }
+  
+  .eventHeadText{
+    margin: auto;
+    font-size: 350%;
+  }
+
+  .cardrow{
+    height: 350px;
+  }
+  
+  .cardHolder{
+    height: 100%;
+  }
+
+
+
+
+
+  .card{
+    height: 100%;
+    width: 100%;
+    
+    }
+
+    .cardImgCont{
+        width: 100%;
+        height: 75%;
+        display: inline-flex;
+    
+    }
+    .cardImg{
+
+        margin: auto;
+        height: 200px;
+        width: 80%;
+    }
+    .cardHeadCont{
+        display: flex;
+        width: 100%;
+        height: 15%;
+    }
+    .cardHeadText{
+        margin: auto;
+    }
+    .cardDateCont{
+        display: flex;
+        width: 100%;
+        height: 10%;
+    }
+    .cardDate{
+        margin: auto;
+    }
+   
+
+
+
+
+  
+ 
+  
+ 
+
+/* 
+  css for execomm profiles */
+
+  .comcont{
+    height: 850px;
+    width: 100%;
+  }
+
+ .exchead{
+    display: inline-flex;
+    width: 100%;
+    height: 16%;
+ }
+ .excheadText{
+    margin: auto;
+    font: 3em sans-serif;
+ }
+ .parentrow1{
+    display: inline-flex;
+ }
+
+ .row1{
+    display: inline-flex;
+    height: 42%;
+    width: 75%;
+    margin: auto;
+   
+ }
+
+ .row2{
+    display: inline-flex;
+    height: 42%;
+    width: 100%;
+ }
+ .profileholder1{
+    margin: 3%;
+    width: 33%;
+
+ }
+ .profileholder2{
+    margin: 3%;
+    width: 25%;
+ }
+
+
+/* 
+ profile card css */
+ .pcard{
+    height: 100%;
+    width: 100%;
+ }
+
+ .pimgcont{
+    width: 100%;
+    height: 75%;
+    display: inline-flex;
+ }
+ .pimg{
+    height: 100%;
+    width: 75%;
+    margin: auto;
+    border-radius: 100%;
+ }
+
+ .pnamecont{
+    width: 100%;
+    height: 15%;
+    display: inline-flex;
+ }
+
+ .pdesigcont{
+    width: 100%;
+    height: 10%;
+    display: inline-flex;
+ }
+
+ .pname{
+    margin: auto;
+ }
+ .pdesig{
+    margin: auto;
+ }
+
+
