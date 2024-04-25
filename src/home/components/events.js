@@ -2,6 +2,12 @@ import styles from './components.module.css';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Card from './card.js';
+import logodesign from './logodesignposter.jpeg';
+import techday from './techdayposter.jpeg';
+import alumnitalk from './alumnitalkposter.jpeg';
+import matlab from './matlabwsposter.jpeg';
+import photonics from './photonicsposter.jpeg';
+import {Link} from "react-router-dom";
 
 
 export default function Events(){
@@ -28,20 +34,22 @@ export default function Events(){
         <div className={styles.eventcont}>
             <div className={styles.eventHead}>
                 <h1 className={styles.eventHeadText}>Events Conducted</h1>
-            </div>
-            <div className={styles.cardHolder}>
-                <Carousel   responsive={responsive} 
+            </div><Link to="/events">
+                <Carousel  className={styles.cardrow} responsive={responsive} 
                             swipeable={false}
                             draggable={false}
                             ssr={true} 
                             infinite={true}
                             focusOnSelect={true}>
-                    <div className={styles.cardHolder}><Card image="img" title="hanchukachuka" brief="kbdjkebfukwekbcwcbw wdbcw"/></div>
-                    <div className={styles.cardHolder}><Card image="img" title="htmkcba" brief="kbdjkebfukwekbcwcbw wdbcw"/></div>
-                    <div className={styles.cardHolder}><Card image="img" title="hanchukachuka" brief="kbdjkebfukwekbcwcbw wdbcw"/></div>
-                    <div className={styles.cardHolder}><Card image="img" title="hanchukachuka" brief="kbdjkebfukwekbcwcbw wdbcw"/></div>
-                </Carousel>
-            </div>
+                    
+                    <div className={styles.cardHolder}><Card image={alumnitalk} title="Alumni Talk" date="27 Dec, 2022"/></div>
+                    <div className={styles.cardHolder}><Card image={logodesign} title="Logo Design" date="16 Jan, 2023"/></div>
+                    <div className={styles.cardHolder}><Card image="img" title="LINUX & GIT Masterclass" date="13 June, 2023"/></div>
+                    <div className={styles.cardHolder}><Card image={techday} title="TECH-DAY 2023" date="15 Sept, 2023"/></div>
+                    <div className={styles.cardHolder}><Card image={photonics} title="Photonics Design Contest" date="14 Feb, 2024"/></div>
+                    <div className={styles.cardHolder}><Card image={matlab} title="MATLAB & Simulink Workshop" date="27 Feb, 2024"/></div>
+                </Carousel></Link>
+    
             <hr/>
 
         </div>

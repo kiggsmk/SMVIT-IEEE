@@ -6,16 +6,17 @@ function Card(props){
     return(
 
         <div className={styles.card}>
-            <div className={styles.cardImg}>
-                <img  alt={props.title} src={props.image}/>
+            <div className={styles.cardImgCont}>
+                <img className={styles.cardImg} alt={props.title} src={props.image}/>
             </div>
 
-            <div className={styles.cardHead}>
+            
+            <div className={styles.cardHeadCont}>
                 <h2 className={styles.cardHeadText}>{props.title}</h2>
             </div>
 
-            <div className={styles.cardDesc}>
-                <p className={styles.cardDescText}>{props.brief}</p>
+            <div className={styles.cardDateCont}>
+                <p className={styles.cardDate}>{props.date}</p>
             </div>
 
             

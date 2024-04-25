@@ -23,7 +23,7 @@ export default function Execom(){
             </div>
             <div className={styles.row2}>
                 <div className={styles.profileholder2}><Pcard name="Chethan J Vinayaka" image={chethan} designation="Secretary"/></div>
-                <div className={styles.profileholder2}><Pcard name="Mithil Dhondhi" image={mithil} designation="treasurer"/></div>
+                <div className={styles.profileholder2}><Pcard name="Mithil Dhondhi" image={mithil} designation="Treasurer"/></div>
                 <div className={styles.profileholder2}><Pcard name="A Shreya" image={shreya} designation="WIE Chair"/></div>
                 <div className={styles.profileholder2}><Pcard name="Mayank Tripathi" image={mayank} designation="Webmaster"/></div>
                 
