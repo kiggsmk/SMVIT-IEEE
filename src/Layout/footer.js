@@ -2,7 +2,7 @@ import styles from './nav.module.css';
 import li from './linkedin.png';
 import fb from './facebook.png';
 import ig from './instagram.png'
-import {Link} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 import clglogo from './mvitlogo.jpg';
 import ieeeblr from './ieeeblrlogo.png';
 
@@ -19,7 +19,7 @@ export default function Footer(){
 
             <div className={styles.chikkabutton}>
               <button className={styles.regbut} type="button">Register</button>
-              <Link to="/membership"><button className={styles.membut} type="button">Membership</button> </Link>
+              <NavLink className={styles.membut} to="/membership"><p className={styles.membutext}>Membership</p></NavLink>
             </div>
 
 

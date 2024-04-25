@@ -1,5 +1,5 @@
 import styles from './nav.module.css';
-import {Link, Outlet } from "react-router-dom";
+import {NavLink, Outlet } from "react-router-dom";
 import logo from './logo-mvit-ieee.png';
 import profile from './profileicon-removebg-preview.png';
 
@@ -17,13 +17,13 @@ export const Nav = () => {
 
             <nav className={styles.listcont}>
                 <ul className={styles.list}>
-                    <li className={styles.listitem}><p><Link to="/home">Home</Link></p></li>
-                    <li className={styles.listitem}><p><Link to="/about">About Us</Link></p></li>
-                    <li className={styles.listitem}><p><Link to="/socaff">Societies & Affinities</Link></p></li>
-                    <li className={styles.listitem}><p><Link to="/events">Events</Link></p></li>
-                    <li className={styles.listitem}><p><Link to="/membership">Membership</Link></p></li>
-                    <li className={styles.listitem}><p><Link to="/gallery">Gallery</Link></p></li>
-                    <li className={styles.listitem}><p><Link to="/blog">Blog</Link></p></li>
+                <NavLink className={styles.navlink} to="/home"><li className={styles.listitem}><p>Home</p></li></NavLink>
+                <NavLink className={styles.navlink} to="/about"><li className={styles.listitem}><p>About Us</p></li></NavLink>
+                <NavLink className={styles.navlink} to="/socaff"><li className={styles.listitem}><p>Societies & Affinities</p></li></NavLink>
+                <NavLink className={styles.navlink} to="/events"><li className={styles.listitem}><p>Events</p></li></NavLink>
+                <NavLink className={styles.navlink} to="/membership"><li className={styles.listitem}><p>Membership</p></li></NavLink>
+                <NavLink className={styles.navlink} to="/gallery"><li className={styles.listitem}><p>Gallery</p></li></NavLink>
+                <NavLink className={styles.navlink} to="/blog"><li className={styles.listitem}><p>Blog</p></li></NavLink>
 
                 </ul>
             </nav>
