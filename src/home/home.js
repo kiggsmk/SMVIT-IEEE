@@ -1,12 +1,13 @@
 import styles from './home.module.css';
-import Title from './title.js';
+import Who from './components/who';
 
 
 
 export default function Home(){
     return(
         <><div className={styles.homecont}>
-             <div className={styles.titlecont}><Title/></div>
+             <div className={styles.titlecont}></div>
+            <Who/>
         </div>
         </>
     )

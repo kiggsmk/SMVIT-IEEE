@@ -1,0 +1,45 @@
+.whoheading{
+    height: 100px;
+    width: 100%;
+    display: flex;
+}
+.whobot{
+    display: inline-flex;
+    width: 100%;
+    height: 350px;
+    padding-bottom:2% ;
+}
+
+.headingtext{
+    margin: auto;
+    font-size: 350%;
+}
+
+.bottextcont{
+    display: inline-flex;
+  width: 40%;
+  padding: 5%;
+}
+
+.bottext{
+    font-size: 120%;
+    text-align: justify;
+}
+
+.botimgcont{
+    display: flex;
+  width: 60%;
+}
+.botimg{
+    margin: auto;
+    border-radius: 10px;
+}
+
+hr{
+    width: 80%;
+    height: 2px;
+    border-radius: 20px;
+    background-color: cadetblue;
+    margin: auto;
+    
+  }
