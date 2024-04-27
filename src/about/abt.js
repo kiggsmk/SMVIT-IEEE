@@ -1,7 +1,8 @@
-import Abouthead from "./components/abhead"
+import Abouthead from "./components/abhead.js"
 import styles from './components/about.module.css';
-import Abouttext from "./components/abtext";
+import Abouttext from "./components/abtext.js";
 import VidPlayer from "./components/abvidplayer";
+import Abbottom from "./components/abbottom.js";
 
 
 export default function About(){
@@ -10,7 +11,7 @@ export default function About(){
             <Abouthead />
             <Abouttext />
             <VidPlayer/>
-        
+            <Abbottom/>
         </div>
     )
 }

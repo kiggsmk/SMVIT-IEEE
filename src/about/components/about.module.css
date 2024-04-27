@@ -54,7 +54,6 @@
 
 .textcont{
     margin: 5% 8% 5% 8%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 3%;
 }
 
@@ -86,6 +85,107 @@
   justify-content: center;
   width: 100%;
 }
+
+
+
+
+.bottomcont{
+  width: 100%;
+  height: 200px;
+  display: inline-flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.bottomleft{
+  width: 43%;
+  height: 100%;
+  margin-left: 15%;
+}
+.bottomleftheadcont{
+  height: 20%;
+  width: 100%;
+  display: inline-flex;
+  margin: 2%;
+}
+.bottomlefttextcont{
+  height: 80%;
+  display: inline-flex;
+  text-align: justify;
+  margin: 2%;
+  width: 70%;
+}
+.bottomlefthead{
+  font-family: sans-serif;
+  padding-top: 15px;
+}
+.bottomlefttext{
+  font-size: 17px;
+  font: sans-serif;
+  color: #000;
+}
+
+
+
+
+
+.bottonright{
+  height: 100%;
+  width: 57%;
+  padding-left: 9%;
+}
+.abbutheadcont{
+  height: 20%;
+  width: 100%;
+  display: inline-flex;
+  margin: 2%;
+}
+.abbuthead{
+  font-family: sans-serif;
+  padding-top: 15px;
+}
+.abbutcont{
+  margin: 3%;
+  height: 100%;
+  width: 500px;
+}
+.but{
+  display: inline-flex;
+  height: 30%;
+  width: 80%;
+}
+.arrow{
+  height: 30px;
+  width: 30px;
+}
+.butsrcont{
+  width: 10%;
+}
+.butsr{
+  font-size: 23px;
+  font: sans-serif;
+  color: #000;
+}
+.buttextcont{
+  width: 60%;
+}
+.buttext{
+  font-size: 23px;
+  font: sans-serif;
+  color: #000;
+}
+.arrowcont{
+  width: 30%;
+  display: inline-flex;
+  justify-content: center;
+}
+.abbutline{
+  width: 70%;
+  margin: 20px 0 20px 0;
+  border: 0;
+  background-color: black;
+  height: 1px;
+}
+
 
 
 
