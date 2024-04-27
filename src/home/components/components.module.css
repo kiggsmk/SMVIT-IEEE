@@ -140,11 +140,12 @@ hr{
  }
  .parentrow1{
     display: inline-flex;
+    height: 338px;
  }
 
  .row1{
     display: inline-flex;
-    height: 42%;
+    height: 100%;
     width: 75%;
     margin: auto;
    

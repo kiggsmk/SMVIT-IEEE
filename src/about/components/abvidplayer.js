@@ -6,7 +6,7 @@ import ReactPlayer from 'react-player';
 export default function VidPlayer(){
     return(
         <div className={styles.vidcont}>
-            <ReactPlayer className={styles.vid} url='https://www.youtube.com/watch?v=LXb3EKWsInQ' />
+            <ReactPlayer height={500} width={1000}  url='https://www.youtube.com/watch?v=LXb3EKWsInQ' />
         </div>
     )
 }

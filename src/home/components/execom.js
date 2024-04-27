@@ -6,6 +6,7 @@ import manoj from './manoj.jpg';
 import chethan from './chethan.jpg';
 import mithil from './mithil.jpg';
 import shreya from './shreya.jpg';
+import ravi from './ravi.jpeg';
 
 
 export default function Execom(){
@@ -16,7 +17,7 @@ export default function Execom(){
             </div>
              <div className={styles.parentrow1}>  
             <div className={styles.row1}>
-                <div className={styles.profileholder1}><Pcard name="Pharinder Ravi Parimi" image="img" designation="Branch Councillor"/>  </div>
+                <div className={styles.profileholder1}><Pcard name="Pharinder Ravi Parimi" image={ravi} designation="Branch Councillor"/>  </div>
                 <div className={styles.profileholder1}><Pcard name="Manoj S Kulkarni" image={manoj} designation="Chair"/></div>
                 <div className={styles.profileholder1}><Pcard name="Akhil Kumar" image={akhil} designation="Vice Chair"/></div>
             </div>
