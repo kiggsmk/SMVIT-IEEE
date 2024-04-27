@@ -10,7 +10,7 @@
   display: inline-flex;
   width: 100%;
 height: 75px;
-position: relative;
+position: fixed;
 z-index: 100;
 }
 
@@ -29,10 +29,10 @@ width: 40%;
 }
 
 .listcont{
-  padding: 5px;
+  padding: 0px 5px 0px 5px;
   display: inline-flex;
 align-items: center;
-  height: 74px;
+  height: 70px;
   width: 53%;
 }
 
