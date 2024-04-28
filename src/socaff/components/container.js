@@ -32,7 +32,7 @@ export default function Soccont(props){
             <div className={styles.hiddensoccont}>
                 <div className={styles.downcont}>
                     <div className={styles.downleftcont}>
-                        <img className={styles.downleftimg} src={props.rep}/>
+                        <img alt="rep" className={styles.downleftimg} src={props.rep}/>
                     </div>
                     <div className={styles.downrightcont}>
                         <div className={styles.downrightheadcont}>

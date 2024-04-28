@@ -1,0 +1,112 @@
+.evtitlecont{
+    height: 200px;
+    width: 100px;
+}
+.ev{
+    display: inline-flex;
+    margin: 5%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+.evcardparent{
+    width: 300px;
+    height: 430px;
+  overflow: hidden;
+  transition: height 0.3s;
+  transition: width 0.3s;
+  cursor: pointer;
+
+}
+
+.upevcont{
+    background-color: burlywood;
+  width: 100%;
+  padding: 3%;
+  overflow: hidden;
+  height: 415px;
+}
+.evcardparentfull{
+    width: 1080px;
+  height: 1200px;
+  overflow: hidden;
+  transition: height 0.3s;
+  transition: width 0.3s;
+}
+.upevcontfull{
+    
+    display: inline-flex;
+    background-color: burlywood;
+  width: 100%;
+  padding: 3%;
+  overflow: hidden;
+  height: 415px;
+}
+
+.upevimg{
+    height: 350px;
+    width: 247px;
+    margin-left: 18px;
+}
+.contentcont{
+    width: 100%;
+}
+.upevheadcont{
+    display: inline-flex;
+    width: 100%;
+}
+.upevhead{
+    margin: auto;
+}
+.upevdatecont{
+    display: inline-flex;
+    width: 100%;
+}
+.upevdate{
+    margin: auto;
+}
+.upevdesccont{
+    display: inline-flex;
+  width: 100%;
+  height: 65%;
+  text-align: center;
+}
+.upevdesc{
+    margin: auto;
+    width: 60%;
+}
+
+.downevcont{
+    margin-top: 5%;
+}
+.evextracont{
+    display: inline-flex;
+    height: 200px;
+}
+.downevtextcont{
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+}
+.downevtext{
+    font: sans-serif;
+    margin: auto;
+    width: 60%;
+}
+.downevimgcont{
+    width:30%;
+    height: 100%;
+    display: inline-flex;
+}
+.downevimg{
+    margin: auto;
+}
+.doddaevimg{
+    margin: auto;
+}
+
+
+.doddaevimgcont{
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 5%;
+}
