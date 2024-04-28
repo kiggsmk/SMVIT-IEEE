@@ -1,7 +1,7 @@
 import styles from './nav.module.css';
 import {NavLink, Outlet } from "react-router-dom";
 import logo from './logo-mvit-ieee.png';
-import profile from './profileicon-removebg-preview.png';
+// import profile from './profileicon-removebg-preview.png';
 
 
 
@@ -28,9 +28,9 @@ export const Nav = () => {
                 </ul>
             </nav>
 
-            <nav className={styles.profileicon}>
+            {/* <nav className={styles.profileicon}>
                 <img alt='profile' className={styles.iconimg} src={profile} />
-            </nav>
+            </nav> */}
 
         </div><Outlet /></>
    
