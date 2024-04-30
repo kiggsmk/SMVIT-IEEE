@@ -154,10 +154,12 @@ css code below is copied from about section without changing the classname */
     height: 100%;
     width: 500px;
   }
+
   .but{
     display: inline-flex;
     height: 30%;
     width: 80%;
+    text-decoration: none;
   }
   .arrow{
     height: 30px;
