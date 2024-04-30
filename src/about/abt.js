@@ -1,4 +1,4 @@
-import Abouthead from "./components/abhead.js"
+
 import styles from './components/about.module.css';
 import Abouttext from "./components/abtext.js";
 import VidPlayer from "./components/abvidplayer";
@@ -12,7 +12,12 @@ export default function About(){
       },[])
     return(
         <div className={styles.aboutcont}>
-            <Abouthead />
+            <div className={styles.titlecont}>
+                <div className={styles.titleheadcont}>
+                    <h3 className={styles.titlehead1}>About Us</h3>
+                    <h1 className={styles.titlehead2}>Pioneering & Progressive</h1>
+                </div>
+            </div>
             <Abouttext />
             <VidPlayer/>
             <Abbottom/>
