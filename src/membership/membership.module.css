@@ -1,0 +1,193 @@
+.memtitlecont{
+    height: 200px;
+}
+
+.memtopcont{
+    display: inline-flex;
+    margin: 2% 5% 0% 5%;
+    width: 90%;
+}
+.memtopleftcont{
+    height: 100%;
+    width: 60%;
+}
+
+.tlc1cont{
+    display: inline-flex;
+    width: 100%;
+    margin: 5%;
+}
+.tlc1textcont{
+    width: 70%;
+    height: 100%;
+}
+.tlc1text{
+    text-align: justify;
+}
+.tlc1butcont{
+    width: 30%;
+    height: 100%;
+    display: inline-flex;
+    justify-content: center;
+    margin: auto;
+}
+.tlc1but{
+    height: 35px;
+    width: 110px;
+    border-radius: 20px;
+
+}
+
+.tlc2cont{
+    margin: 2% 5% 5% 7%;
+    width: 100%;
+    
+}
+.tlc2listcont{
+    display: inline-flex;
+    width: 100%;
+}
+
+.tlc2list{
+    line-height: 200%;
+    list-style-type: none;
+    width: 50%;
+
+}
+.tlc2listitem:before {
+    content: '✓       ';
+  }
+  .listimgcont{
+    height: 100%;
+    width: 50%;
+  }
+
+
+.regcont{
+    width: 25%;
+    margin: 2% 2% 2% 7%;
+  }
+  
+.regheadcont{
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+}
+.regformcont{
+    height: 100%;
+    width: 100%;
+    padding-left: 10% ;
+}
+
+.regform{
+    line-height: 200%;
+}
+
+.regformlabel{
+    width: 100%;
+    font-size: 100%;
+
+}
+.regforminput{
+    height: 30px;
+  width: 80%;
+  border-radius: 10px;
+  padding-left: 2%;
+  margin-bottom: 20px;
+}
+.regformbut{
+    height: 30px;
+    width: 30%;
+    border-radius: 20px;
+    
+}
+
+
+
+.memfeecont{
+    margin: 2% 5% 5% 5%;
+    width: 90%;
+}
+.memfeeheadcont{
+    width: 90%;
+    margin-left: 4%;
+    display: inline-flex;
+}
+
+.feetablecont{
+    width: 91%;
+  margin: 0 5% 0 4%;
+}
+
+.feetable {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+
+
+  .memreachcont{
+    margin: 2% 5% 5% 5%;
+    width: 82%;
+    padding-left: 3.5%;
+  }
+  .memreachheadcont{
+    margin-bottom: 3%;
+  }
+
+
+/* 
+css code below is copied from about section without changing the classname */
+
+  .abbutcont{
+    margin: 3%;
+    height: 100%;
+    width: 500px;
+  }
+  .but{
+    display: inline-flex;
+    height: 30%;
+    width: 80%;
+  }
+  .arrow{
+    height: 30px;
+    width: 30px;
+  }
+  .butsrcont{
+    width: 10%;
+  }
+  .butsr{
+    font-size: 23px;
+    font: sans-serif;
+    color: #000;
+  }
+  .buttextcont{
+    width: 60%;
+  }
+  .buttext{
+    font-size: 23px;
+    font: sans-serif;
+    color: #000;
+  }
+  .arrowcont{
+    width: 30%;
+    display: inline-flex;
+    justify-content: center;
+  }
+  .abbutline{
+    width: 70%;
+    margin: 20px 0 20px 0;
+    border: 0;
+    background-color: black;
+    height: 1px;
+  }
