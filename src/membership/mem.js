@@ -1,9 +1,13 @@
 import styles from './membership.module.css';
-import React,{useState, useRef} from 'react';
+import React,{useState, useRef, useEffect} from 'react';
 import mail from './mailicon.png';
 
 
+
 export default function Membership(){
+    useEffect(() => {
+        window.scrollTo(0,0);
+      },[])
     const [rupee, setCurrency]= useState (true);
     function changeCurrency(){
         setCurrency(!rupee);

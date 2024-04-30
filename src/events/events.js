@@ -3,8 +3,12 @@ import styles from './components/event.module.css';
 import ldposter from './logodesignposter.jpeg';
 import a from './demo.jpg';
 import b from './demo2.jpg';
+import React, {useEffect} from 'react';
 
 export default function Events(){
+    useEffect(() => {
+        window.scrollTo(0,0);
+      },[])
     return(
         <div className={styles.evcont}>
             <div className={styles.evtitlecont}></div>
