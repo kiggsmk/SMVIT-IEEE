@@ -2,8 +2,12 @@ import styles from './components/soc.module.css';
 import Soccont from './components/container';
 import rep1 from './components/demo.jpg';
 import titleimg from './components/demo2.jpg';
+import React, {useEffect} from 'react';
 
 export default function Soc(){
+    useEffect(() => {
+        window.scrollTo(0,0);
+      },[])
     return(
         <div className={styles.soccont}>
             <div className={styles.soctitlecont}></div>

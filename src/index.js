@@ -15,6 +15,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from './App.js';
 
 export default function App() {
+  
   return (
     <BrowserRouter>
       <Routes>
@@ -38,6 +39,7 @@ export default function App() {
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
   <>
     <App/>
