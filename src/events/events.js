@@ -21,6 +21,12 @@ export default function Events(){
       },[])
     return(
         <div className={styles.evcont}>
+            <div className={styles.titlecont}>
+                <div className={styles.titleheadcont}>
+                    <h3 className={styles.titlehead1}>Student Branch</h3>
+                    <h1 className={styles.titlehead2}>Events Conducted</h1>
+                </div>
+            </div>
             <div className={styles.evtitlecont}></div>
             <div className={styles.evbodycont}>
                 <div ref={card1} className={styles.ev} onClick={()=>{card1.current?.scrollIntoView({behavior:'smooth'})}}>

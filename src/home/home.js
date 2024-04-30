@@ -12,7 +12,12 @@ export default function Home(){
       },[])
     return(
         <><div className={styles.homecont}>
-             <div className={styles.titlecont}></div>
+            <div className={styles.titlecont}>
+                <div className={styles.titleheadcont}>
+                    <h3 className={styles.titlehead1}>Student Branch</h3>
+                    <h1 className={styles.titlehead2}>IEEE | MVIT</h1>
+                </div>
+            </div>
             <Who/>
             <Events/>
             <Execom/>

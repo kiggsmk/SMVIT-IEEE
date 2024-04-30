@@ -16,7 +16,12 @@ export default function Membership(){
     const reachRef= useRef(null);
     return(
         <div className={styles.membody}>
-            <div className={styles.memtitlecont}></div>
+            <div className={styles.titlecont}>
+                <div className={styles.titleheadcont}>
+                    <h3 className={styles.titlehead1}>Join the Band</h3>
+                    <h1 className={styles.titlehead2}>Membership</h1>
+                </div>
+            </div>
             <div className={styles.memtopcont}>
                 <div className={styles.memtopleftcont}>
                     <div className={styles.tlc1cont}>

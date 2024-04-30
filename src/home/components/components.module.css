@@ -1,3 +1,4 @@
+
 .whoheading{
     height: 100px;
     width: 100%;
@@ -13,22 +14,25 @@
 .headingtext{
     margin: auto;
     font-size: 350%;
+    font-family: 'Georgia', serif;
 }
 
 .bottextcont{
     display: inline-flex;
-  width: 40%;
+  width: 50%;
   padding: 5%;
 }
 
 .bottext{
     font-size: 120%;
     text-align: justify;
+    width: 80%;
+  margin: auto;
 }
 
 .botimgcont{
     display: flex;
-  width: 60%;
+  width: 50%;
 }
 .botimg{
     margin: auto;
@@ -37,9 +41,10 @@
 
 hr{
     width: 80%;
-    height: 2px;
+    opacity: 0.1;
+    height: 1px;
     border-radius: 20px;
-    background-color: cadetblue;
+    background-color: black;
     margin: auto;
     
   }
@@ -63,6 +68,7 @@ hr{
   .eventHeadText{
     margin: auto;
     font-size: 350%;
+    font-family: 'Georgia', serif;
   }
 
   .cardrow{
@@ -136,7 +142,8 @@ hr{
  }
  .excheadText{
     margin: auto;
-    font: 3em sans-serif;
+    font-size: 350%;
+    font-family: 'Georgia', serif;
  }
  .parentrow1{
     display: inline-flex;

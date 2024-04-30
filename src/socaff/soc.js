@@ -4,13 +4,19 @@ import rep1 from './components/demo.jpg';
 import titleimg from './components/demo2.jpg';
 import React, {useEffect} from 'react';
 
+
 export default function Soc(){
     useEffect(() => {
         window.scrollTo(0,0);
       },[])
     return(
         <div className={styles.soccont}>
-            <div className={styles.soctitlecont}></div>
+            <div className={styles.titlecont}>
+                <div className={styles.titleheadcont}>
+                    <h3 className={styles.titlehead1}>Student Branch</h3>
+                    <h1 className={styles.titlehead2}>Societies & Affinities</h1>
+                </div>
+            </div>
             <div className={styles.socbodycont}>
                 <div className={styles.soc1}>
                     <Soccont socimg={titleimg}
