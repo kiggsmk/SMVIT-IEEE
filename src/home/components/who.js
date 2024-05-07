@@ -7,7 +7,12 @@ export default function Who(){
             <div className={styles.whoheading}><h1 className={styles.headingtext}>Who are we</h1></div>
             <div className={styles.whobot}>
                 <div className={styles.bottextcont}>
-                    <p className={styles.bottext}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    <p className={styles.bottext}>The IEEE Student Branch at Sir M. Visvesvaraya Institute of Technology, is a dynamic community
+                            fostering innovation and collaboration among budding engineers and technologists. Through
+                            workshops, seminars, and hands-on projects, we explore cutting-edge advancements in technology,
+                            from artificial intelligence to renewable energy. Our goal is to empower students with practical skills
+                            and knowledge while providing networking opportunities with industry professionals, preparing
+                            them for a successful career in the ever-evolving world of technology.
                     </p>
 
                 </div>
