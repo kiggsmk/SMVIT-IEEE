@@ -82,7 +82,7 @@
 
 .uppertextcont{
     height: 50%;
-  width: 62%;
+  width: 100%;
   display: inline-flex;
 }
 .uppertext{
@@ -90,12 +90,33 @@
     font-size: 140%;
     margin: 3%;
     font: sans-serif;
+    padding-right: 6%;
+}
+.uppertextimg1cont{
+  width: 300%;
+  height: 300%;
+}
+.uppertextimg1{
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.uppertextimg2cont{
+  width: 80%;
+  height: 100%;
+  margin-top: 46px;
+}
+.uppertextimg2{
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
 }
 
 .lowertextcont{
     height: 50%;
-  width: 60%;
-  margin-left: 40%;
+  width: 100%;
+  display: inline-flex;
 }
 .lowertext{
     text-align: justify;
@@ -127,7 +148,7 @@
 .bottomleft{
   width: 43%;
   height: 100%;
-  margin-left: 15%;
+  margin-left: 10%;
 }
 .bottomleftheadcont{
   height: 20%;
