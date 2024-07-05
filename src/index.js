@@ -37,11 +37,25 @@ export default function App() {
   );
 }
 
+function Mobile(){
+let details = navigator.userAgent; 
+
+let regexp = /android|iphone|kindle|ipad/i; 
+
+
+let isMobileDevice = regexp.test(details); 
+
+if (isMobileDevice) { 
+	alert("This Website is not responsive to Mobile Phones and tablets. Please Use a Desktop to access the services") 
+}
+}
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <>
+  <Mobile/>
     <App/>
   </>
 );
