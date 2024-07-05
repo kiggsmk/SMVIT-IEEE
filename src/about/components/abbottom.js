@@ -13,7 +13,7 @@ export default function Abbottom(){
             </div>
             <div className={styles.bottomlefttextcont}>
                 <p className={styles.bottomlefttext}>
-                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                Empowering students with cutting-edge technology, networking opportunities, and practical skills for a successful career in engineering and technology. 
                 </p>
 
             </div>
