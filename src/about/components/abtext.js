@@ -8,13 +8,13 @@ export default function Abouttext(){
         <div className={styles.textcont}>
             <div className={styles.uppertextcont}>
                 <p className={styles.uppertext}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
+                Welcome to the buzzing hive of innovation that is SMVIT IEEE Student Branch! We're your go-to destination for all things tech and engineering. Imagine a place where you can dive headfirst into exciting workshops, attend captivating talks by industry pros, and connect with fellow enthusiasts who share your passion. Whether you're a seasoned techie or just starting to dip your toes into the world of technology, there's something here for everyone. </p>
             </div>
             <div className={styles.lowertextcont}>
                 <p className={styles.lowertext}>
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
-                </p>
+                Join us as we embark on a journey of discovery, where we explore cutting-edge advancements, brainstorm creative solutions to real-world problems, and collaborate on projects that push the boundaries of what's possible. But it's not all serious business – we also know how to have a good time! From social events to hackathons, we're all about fostering a sense of camaraderie and friendship.<br/>
+
+So why wait? Come be a part of our vibrant community, where every member is valued and every idea is welcomed with open arms. Together, let's unleash our potential, inspire one another, and pave the way for a brighter, tech-driven future. Join us at SMVIT IEEE Student Branch – where innovation knows no bounds                </p>
 
             </div>
         </div>
