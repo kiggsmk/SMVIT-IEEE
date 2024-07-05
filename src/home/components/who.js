@@ -1,12 +1,29 @@
 import styles from './components.module.css';
+import React, { useState } from 'react';
+import { useInView } from 'react-intersection-observer';
 
 
 export default function Who(){
+
+
+    const [isVisible, setIsVisible] = useState(false);
+
+    const { ref, inView } = useInView({
+      threshold: 0.8, 
+      triggerOnce: false, 
+    });
+  
+    React.useEffect(() => {
+      setIsVisible(inView);
+    }, [inView]);
+
+    
+
     return(
         <div className={styles.whocont}>
             <div className={styles.whoheading}><h1 className={styles.headingtext}>Who are we</h1></div>
-            <div className={styles.whobot}>
-                <div className={styles.bottextcont}>
+            <div className={styles.whobot} ref={ref}>
+                <div className={(isVisible ? styles.bottextcontvisible : styles.bottextcont)}>
                     <p className={styles.bottext}>The IEEE Student Branch at Sir M. Visvesvaraya Institute of Technology, is a dynamic community
                             fostering innovation and collaboration among budding engineers and technologists. Through
                             workshops, seminars, and hands-on projects, we explore cutting-edge advancements in technology,
@@ -16,7 +33,7 @@ export default function Who(){
                     </p>
 
                 </div>
-                <div className={styles.botimgcont}>
+                <div className={(isVisible ? styles.botimgcontvisible : styles.botimgcont)}>
                     <img alt="ieee-mvit" className={styles.botimg} src="https://picsum.photos/id/331/400/300"/>
 
                 </div>

@@ -34,7 +34,7 @@ export default function Events(){
         <div className={styles.eventcont}>
             <div className={styles.eventHead}>
                 <h1 className={styles.eventHeadText}>Events Conducted</h1>
-            </div><Link to="/events">
+            </div>
                 <Carousel  className={styles.cardrow} responsive={responsive} 
                             swipeable={false}
                             draggable={false}
@@ -42,13 +42,13 @@ export default function Events(){
                             infinite={true}
                             focusOnSelect={true}>
                     
-                    <div className={styles.cardHolder}><Card image={alumnitalk} title="Alumni Talk" date="27 Dec, 2022"/></div>
-                    <div className={styles.cardHolder}><Card image={logodesign} title="Logo Design" date="16 Jan, 2023"/></div>
-                    <div className={styles.cardHolder}><Card image="img" title="LINUX & GIT Masterclass" date="13 June, 2023"/></div>
-                    <div className={styles.cardHolder}><Card image={techday} title="TECH-DAY 2023" date="15 Sept, 2023"/></div>
-                    <div className={styles.cardHolder}><Card image={photonics} title="Photonics Design Contest" date="14 Feb, 2024"/></div>
-                    <div className={styles.cardHolder}><Card image={matlab} title="MATLAB & Simulink Workshop" date="27 Feb, 2024"/></div>
-                </Carousel></Link>
+                    <div className={styles.cardHolder}><Link to="/events"><Card image={alumnitalk} title="Alumni Talk" date="27 Dec, 2022"/></Link></div>
+                    <div className={styles.cardHolder}><Link to="/events"><Card image={logodesign} title="Logo Design" date="16 Jan, 2023"/></Link></div>
+                    <div className={styles.cardHolder}><Link to="/events"><Card image="img" title="LINUX & GIT Masterclass" date="13 June, 2023"/></Link></div>
+                    <div className={styles.cardHolder}><Link to="/events"><Card image={techday} title="TECH-DAY 2023" date="15 Sept, 2023"/></Link></div>
+                    <div className={styles.cardHolder}><Link to="/events"><Card image={photonics} title="Photonics Design Contest" date="14 Feb, 2024"/></Link></div>
+                    <div className={styles.cardHolder}><Link to="/events"><Card image={matlab} title="MATLAB & Simulink Workshop" date="27 Feb, 2024"/></Link></div>
+                </Carousel>
     
             <hr/>
 

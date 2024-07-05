@@ -14,12 +14,12 @@ export default function Footer(){
           <div className={styles.chikka}>
             <div className={styles.chikkatext}>
               <h1>Join IEEE Today!</h1>
-              <h3>✓ free beer</h3><h3 className={styles.bhakk}>✓ unlimited food</h3><h3 className={styles.bhakk}>✓ Netflix</h3>
+              <h3 className={styles.bhakk1}>✓ Global Networking</h3><h3 className={styles.bhakk}>✓ Exclusive Resources</h3><h3 className={styles.bhakk}>✓ Career Boost</h3>
             </div>
 
             <div className={styles.chikkabutton}>
-              <button className={styles.regbut} type="button">Register</button>
-              <NavLink className={styles.membut} to="/membership"><p className={styles.membutext}>Membership</p></NavLink>
+            <NavLink className={styles.membut} to="/membership"><button className={styles.regbut} type="button">Register</button></NavLink>
+              <NavLink className={styles.membut} to="/membership"><button className={styles.regbut} type="button">Membership</button></NavLink>
             </div>
 
 
