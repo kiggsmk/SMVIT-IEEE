@@ -1,6 +1,10 @@
 import styles from './membership.module.css';
 import React,{useState, useRef, useEffect} from 'react';
 import mail from './mailicon.png';
+import i1 from './communication.png';
+import i2 from './graduated.png';
+import i3 from './science.png';
+import i4 from './teacher.png';
 
 
 
@@ -25,25 +29,25 @@ export default function Membership(){
             <div className={styles.memtopcont}>
                 <div className={styles.memtopleftcont}>
                     <div className={styles.tlc1cont}>
-                        <div className={styles.tlc1textcont}><p className={styles.tlc1text}>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p></div>
+                        <div className={styles.tlc1textcont}><p className={styles.tlc1text}>Joining the IEEE Student Branch offers numerous benefits, including access to a global network of professionals, cutting-edge resources, and exclusive events. Enhance your skills, expand your knowledge, and connect with industry leaders. Don't miss out on these incredible opportunities—join us today and take the first step towards a successful engineering career!</p></div>
                         <div className={styles.tlc1butcont}><button onClick={()=>{reachRef.current?.scrollIntoView({behavior:'smooth'})}} type='button' className={styles.tlc1but}>Reach Out!</button> </div>
                     </div>
                     <div className={styles.tlc2cont}>
-                        <div className={styles.tlc2headcont}><h1 className={styles.tlc2head}>Joining today will get you:</h1></div>
+                        <div className={styles.tlc2headcont}><h1 className={styles.tlc2head}>Joining today will get you:</h1></div><br/>
                         <div className={styles.tlc2listcont}>
                             <ul className={styles.tlc2list}>
-                                <li className={styles.tlc2listitem}>Something</li>
-                                <li className={styles.tlc2listitem}>Something</li>
-                                <li className={styles.tlc2listitem}>Something</li>
-                                <li className={styles.tlc2listitem}>Something</li>
-                                <li className={styles.tlc2listitem}>Something</li>
-                                <li className={styles.tlc2listitem}>Something</li>
+                                <li className={styles.tlc2listitem}>Networking with professionals</li>
+                                <li className={styles.tlc2listitem}>Industry event invitations</li>
+                                <li className={styles.tlc2listitem}>Skill-building workshops</li>
+                                <li className={styles.tlc2listitem}>Research collaboration opportunities</li>
+                                <li className={styles.tlc2listitem}>Leadership experience development</li>
+                                <li className={styles.tlc2listitem}>Access to IEEE resources</li>
                             </ul>
                             <div className={styles.listimgcont}>
-                                <img src='img' alt='ieee' className={styles.listimg}/><br/>
-                                <img src='img' alt='ieee' className={styles.listimg}/><br/>
-                                <img src='img' alt='ieee' className={styles.listimg}/><br/>
-                                <img src='img' alt='ieee' className={styles.listimg}/>
+                                <img src={i1} alt='ieee' className={styles.listimg1}/><br/>
+                                <img src={i2} alt='ieee' className={styles.listimg2}/><br/>
+                                <img src={i3} alt='ieee' className={styles.listimg1}/><br/>
+                                <img src={i4} alt='ieee' className={styles.listimg2}/>
                             </div>
                         </div>
                     </div>
@@ -76,23 +80,23 @@ export default function Membership(){
                     </tr>
                     <tr>
                         <td>Student Membership</td>
-                        <td onClick={()=>changeCurrency()}>{rupee ? '₹':'$'}</td>
-                        <td onClick={()=>changeCurrency()}>{rupee ? '₹':'$'}</td>
+                        <td onClick={()=>changeCurrency()}>{rupee ? '₹1170':'14$'}</td>
+                        <td onClick={()=>changeCurrency()}>{rupee ? '₹1170':'14$'}</td>
                     </tr>
                     <tr>
-                        <td>Centro comercial Moctezuma</td>
-                        <td onClick={()=>changeCurrency()}>{rupee ? '₹':'$'}</td>
-                        <td onClick={()=>changeCurrency()}>{rupee ? '₹':'$'}</td>
+                        <td>Communications Society(ComSoc)</td>
+                        <td onClick={()=>changeCurrency()}>{rupee ? '₹47.58':'0.57$'}</td>
+                        <td onClick={()=>changeCurrency()}>{rupee ? '₹47.58':'0.57$'}</td>
                     </tr>
                     <tr>
-                        <td>Centro comercial Moctezuma</td>
-                        <td onClick={()=>changeCurrency()}>{rupee ? '₹':'$'}</td>
-                        <td onClick={()=>changeCurrency()}>{rupee ? '₹':'$'}</td>
+                        <td>Photonics Society</td>
+                        <td onClick={()=>changeCurrency()}>{rupee ? '₹417.39':'5$'}</td>
+                        <td onClick={()=>changeCurrency()}>{rupee ? '₹417.39':'5$'}</td>
                     </tr>
                     <tr>
-                        <td>Centro comercial Moctezuma</td>
-                        <td onClick={()=>changeCurrency()}>{rupee ? '₹':'$'}</td>
-                        <td ref={reachRef} onClick={()=>changeCurrency()}>{rupee ? '₹':'$'}</td>
+                        <td>Affinity Group-Women in Engineering(WIE)</td>
+                        <td onClick={()=>changeCurrency()}>Free!</td>
+                        <td ref={reachRef} onClick={()=>changeCurrency()}>Free!</td>
                     </tr>
                 </table>    
                 </div>

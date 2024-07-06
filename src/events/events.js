@@ -1,8 +1,6 @@
 import Evcont from "./components/eventcont";
 import styles from './components/event.module.css';
 import ldposter from './logodesignposter.jpeg';
-import a from './demo.jpg';
-import b from './demo2.jpg';
 import React, {useEffect, useRef} from 'react';
 import tsposter from './eventposters/technotsavposter.jpg';
 import tsimg from './eventposters/technotsavImg.jpg';
@@ -48,7 +46,7 @@ export default function Events(){
                     <h1 className={styles.titlehead2}>Events Conducted</h1>
                 </div>
             </div>
-            <div className={styles.evtitlecont}></div>
+            <div className={styles.evtitlecont}>Click on card to know more!</div>
             <div className={styles.evbodycont}>
                 <div ref={card1} className={styles.ev} onClick={()=>{card1.current?.scrollIntoView({behavior:'smooth'})}}>
                     <Evcont evimg1={tsposter}
