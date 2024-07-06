@@ -9,6 +9,37 @@ import i4 from './teacher.png';
 
 
 export default function Membership(){
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        contact: '',
+      });
+    
+      const handleChange = (e) => {
+        setFormData({
+          ...formData,
+          [e.target.name]: e.target.value,
+        });
+      };
+    
+      const handleSubmit = async (e) => {
+        e.preventDefault();
+        const response = await fetch('/api/membership', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(formData),
+        });
+        if (response.ok) {
+          window.location.href = '/regmem';
+        }
+      };
+    
+
+
+
+
     useEffect(() => {
         window.scrollTo(0,0);
       },[])
@@ -55,14 +86,14 @@ export default function Membership(){
                 <div className={styles.regcont}>
                     <div className={styles.regheadcont}><h1 className={styles.reghead}>Register!</h1></div>
                     <div className={styles.regformcont}>
-                        <form className={styles.regform} method='post' >
+                        <form className={styles.regform} onSubmit={handleSubmit} >
                             <label className={styles.regformlabel}>Name</label><br/>
-                            <input placeholder='Enter full name' className={styles.regforminput} name='name' type='text' required/><br/>
+                            <input placeholder='Enter full name' className={styles.regforminput} name='name' value={formData.name} onChange={handleChange} type='text' required/><br/>
                             <label className={styles.regformlabel}>Email</label><br/>
-                            <input placeholder='email@xyz.com' className={styles.regforminput} name='email' type='text' required/><br/>
+                            <input placeholder='email@xyz.com' className={styles.regforminput} name='email' type='text' value={formData.email} onChange={handleChange} required/><br/>
                             <label className={styles.regformlabel}>Contact No.</label><br/>
-                            <input className={styles.regforminput} name='phone' type='num' /><br/>
-                            <input type="submit" value="Submit" className={styles.regformbut}/><br/>
+                            <input className={styles.regforminput} value={formData.phone} onChange={handleChange} name='phone' type='num' /><br/>
+                            <button className={styles.regformbut} type="submit">Register</button><br/>
                         </form>
                     </div>
                 </div>
