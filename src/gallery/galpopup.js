@@ -1,6 +1,5 @@
 import React from 'react'
 import styles from './gal.module.css';
-import close from './closeicon.png'
 import SimpleImageSlider from "react-simple-image-slider";
 
 
@@ -20,7 +19,7 @@ export default function GalPop(props) {
   return (
     <>
     <div className={(styles.galpopcontopen)}>
-    <button className={styles.galpopclosebut} onClick={props.handleOnClick}><img src={close}/></button>
+    <button className={styles.galpopclosebut} onClick={props.handleOnClick}><img src='img'/></button>
           <SimpleImageSlider
               width={896}
               height={504}
