@@ -24,7 +24,7 @@ export default function Membership(){
     
       const handleSubmit = async (e) => {
         e.preventDefault();
-        const response = await fetch('/api/membership', {
+        const response = await fetch('http://localhost:3001/regmem', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

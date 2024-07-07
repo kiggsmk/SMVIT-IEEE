@@ -1,15 +1,18 @@
 const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser');
+const { STATUS_CODES } = require('http');
 const app = express();
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3000;
 
 app.use(bodyParser.json());
 
-app.post('http://localhost:3001/membership', (req, res) => {
+app.post('/regmem', (req, res) => {
     const { name, email } = req.body;
-    console.log(req.body)
+    console.log(name);
+    console.log(email);
+    res.send(STATUS_CODES)
     
   });
 
-  app.listen(PORT)
+  app.listen(3001)
