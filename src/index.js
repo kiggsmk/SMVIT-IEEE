@@ -8,6 +8,7 @@ import Membership from './membership/mem.js';
 import Blog from './blog/blog.js';
 import Events from './events/events.js';
 import NoPage from './nopage/nopg.js';
+import Regmember from './membership/regmem.js';
 
 
 
@@ -28,6 +29,7 @@ export default function App() {
           <Route path="socaff" element={<Soc />} />
           <Route path="membership" element={<Membership />} />
           <Route path="blog" element={<Blog />} />
+          <Route path="regmem" element={<Regmember />} />
           <Route path="*" element={<NoPage />} />  
         </Route>
       </Routes>
