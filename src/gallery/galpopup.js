@@ -23,9 +23,10 @@ export default function GalPop(props) {
     <div className={(styles.galpopcontopen)}>
     <div className={styles.galpopclosebut} ><img className={styles.galpopcloseicon} onClick={props.handleOnClick} src={close}/></div>
           <SimpleImageSlider
-              width={896}
-              height={504}
+              width={800}
+              height={500}
               images={images}
+              startIndex={props.indx}
               showBullets={true}
               showNavs={true} />
       </div></>

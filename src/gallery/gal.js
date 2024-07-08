@@ -9,12 +9,43 @@ import GalPop from './galpopup';
 
 export default function Gallery(){
     const [open, setOpen] = useState(false);
+    const [altk,setAltk] = useState(false);
+    const [exemeet, setExemeet] = useState(false);
+    const [logodes, setLogodes] = useState(false);
+    const [ori, setOri] = useState(false);
+    const [photo, setPhoto] = useState(false);
+    const [tcday, setTcday] = useState(false);
+    const [tsv, settsv] = useState(false);
+    var i;
+    if (altk){
+        i=0;
+    }
+    else if(exemeet){
+        i=6;
+    }
+    else if(logodes){
+        i=8;
+    }
+    else if(ori){
+        i=10;
+    }
+    else if(photo){
+        i=14;
+    }
+    else if(tcday){
+        i=10;
+    }
+    else if(tsv){
+        i=26;
+    }
 
     return(
         <>
         {
          open && <GalPop handleOnClick={() => {
-            setOpen(false)}}/>
+            setOpen(false)}}
+            indx={i}
+            />
         }
             <div className={styles.titlecont}>
                 <div className={styles.titleheadcont}>
@@ -33,11 +64,15 @@ export default function Gallery(){
                     <div className={styles.galcardcont}>
                         <GalCard handleOnClick={() => {
                             setOpen(true)
-                        }}/>
+                            setAltk(true)
+                        }}
+                        />
+
                     </div>
                 </div>
 
             </div>
         </>
     )
+    
 }
