@@ -7,6 +7,7 @@ import GalPop from './galpopup';
 
 
 
+
 export default function Gallery(){
     const [open, setOpen] = useState(false);
     const [altk,setAltk] = useState(false);
@@ -61,6 +62,54 @@ export default function Gallery(){
                     </div>
                 </div>
                 <div className={styles.galdowncont}>
+                    <div className={styles.galcardcont}>
+                        <GalCard handleOnClick={() => {
+                            setOpen(true)
+                            setAltk(true)
+                        }}
+                        />
+
+                    </div>
+                    <div className={styles.galcardcont}>
+                        <GalCard handleOnClick={() => {
+                            setOpen(true)
+                            setAltk(true)
+                        }}
+                        />
+
+                    </div>
+                    <div className={styles.galcardcont}>
+                        <GalCard handleOnClick={() => {
+                            setOpen(true)
+                            setAltk(true)
+                        }}
+                        />
+
+                    </div>
+                    <div className={styles.galcardcont}>
+                        <GalCard handleOnClick={() => {
+                            setOpen(true)
+                            setAltk(true)
+                        }}
+                        />
+
+                    </div>
+                    <div className={styles.galcardcont}>
+                        <GalCard handleOnClick={() => {
+                            setOpen(true)
+                            setAltk(true)
+                        }}
+                        />
+
+                    </div>
+                    <div className={styles.galcardcont}>
+                        <GalCard handleOnClick={() => {
+                            setOpen(true)
+                            setAltk(true)
+                        }}
+                        />
+
+                    </div>
                     <div className={styles.galcardcont}>
                         <GalCard handleOnClick={() => {
                             setOpen(true)
