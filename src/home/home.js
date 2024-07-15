@@ -3,6 +3,7 @@ import Who from './components/who';
 import Events from './components/events';
 import Execom from './components/execom';
 import React, {useEffect} from 'react';
+import LoadEnvelope from './components/initEnv';
 
 
 
@@ -11,7 +12,9 @@ export default function Home(){
         window.scrollTo(0,0);
       },[])
     return(
-        <><div className={styles.homecont}>
+        <>
+        <LoadEnvelope/>
+        <div className={styles.homecont}>
             <div className={styles.titlecont}>
                 <div className={styles.titleheadcont}>
                     <h3 className={styles.titlehead1}>Student Branch</h3>
