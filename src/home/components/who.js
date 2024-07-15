@@ -1,6 +1,7 @@
 import styles from './components.module.css';
 import React, { useState } from 'react';
 import { useInView } from 'react-intersection-observer';
+import frontimg from './frontimg.jpg';
 
 
 export default function Who(){
@@ -34,7 +35,7 @@ export default function Who(){
 
                 </div>
                 <div className={(isVisible ? styles.botimgcontvisible : styles.botimgcont)}>
-                    <img alt="ieee-mvit" className={styles.botimg} src="https://picsum.photos/id/331/400/300"/>
+                    <img alt="ieee-mvit" className={styles.botimg} src={frontimg}/>
 
                 </div>
             </div>

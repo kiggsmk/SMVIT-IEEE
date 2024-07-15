@@ -2,13 +2,22 @@
 import styles from './gal.module.css';
 import GalCard from './galcard';
 import React from 'react';
-import { useState } from 'react';
+import { useState , useEffect } from 'react';
 import GalPop from './galpopup';
-
+import banner from './gallerythumbnail/ttsv.jpeg';
+import tph from './gallerythumbnail/tphc.jpeg';
+import tori from './gallerythumbnail/tori.jpeg';
+import al from './gallerythumbnail/altk.jpg';
+import lng from './gallerythumbnail/lng.jpeg';
+import ttd from './gallerythumbnail/ttd.jpeg';
+import ldes from './gallerythumbnail/lodes.jpg';
 
 
 
 export default function Gallery(){
+    useEffect(() => {
+        window.scrollTo(0,0);
+      },[])
     const [open, setOpen] = useState(false);
     const [altk,setAltk] = useState(false);
     const [exemeet, setExemeet] = useState(false);
@@ -16,7 +25,7 @@ export default function Gallery(){
     const [ori, setOri] = useState(false);
     const [photo, setPhoto] = useState(false);
     const [tcday, setTcday] = useState(false);
-    const [tsv, settsv] = useState(false);
+    const [tsv, setTsv] = useState(false);
     var i;
     if (altk){
         i=0;
@@ -40,6 +49,11 @@ export default function Gallery(){
         i=26;
     }
 
+    const handleBannerClick=() => {
+        setOpen(true);
+        setTsv(true);
+    }
+
     return(
         <>
         {
@@ -58,7 +72,10 @@ export default function Gallery(){
             <div className={StyleSheet.galbodycont}>
                 <div className={styles.galbannercont}>
                     <div className={styles.galbannerimgcont}>
-                        <img src='img' alt='banner' className={styles.galbannerimg}/>
+                        <img src={banner} alt='banner' className={styles.galbannerimg}/>
+                    </div>
+                    <div className={styles.galbannerbutcont}>
+                        <button onClick={handleBannerClick} type='click' className={styles.galbannerbut}>View Photos</button>
                     </div>
                 </div>
                 <div className={styles.galdowncont}>
@@ -66,58 +83,93 @@ export default function Gallery(){
                         <GalCard handleOnClick={() => {
                             setOpen(true)
                             setAltk(true)
-                        }}
+                            setExemeet(false)
+                            setLogodes(false)
+                            setOri(false)
+                            setPhoto(false)
+                            setTcday(false)
+                            setTsv(false)
+                        }}                       
+                        galimg={al}
                         />
 
                     </div>
                     <div className={styles.galcardcont}>
                         <GalCard handleOnClick={() => {
                             setOpen(true)
-                            setAltk(true)
+                            setAltk(false)
+                            setExemeet(true)
+                            setLogodes(false)
+                            setOri(false)
+                            setPhoto(false)
+                            setTcday(false)
+                            setTsv(false)
                         }}
+                        galimg={lng}
                         />
 
                     </div>
                     <div className={styles.galcardcont}>
                         <GalCard handleOnClick={() => {
                             setOpen(true)
-                            setAltk(true)
+                            setAltk(false)
+                            setExemeet(false)
+                            setLogodes(true)
+                            setOri(false)
+                            setPhoto(false)
+                            setTcday(false)
+                            setTsv(false)
                         }}
+                        galimg={ldes}
                         />
 
                     </div>
                     <div className={styles.galcardcont}>
                         <GalCard handleOnClick={() => {
                             setOpen(true)
-                            setAltk(true)
+                            setAltk(false)
+                            setExemeet(false)
+                            setLogodes(false)
+                            setOri(true)
+                            setPhoto(false)
+                            setTcday(false)
+                            setTsv(false)
                         }}
+                        galimg={tori}
                         />
 
                     </div>
                     <div className={styles.galcardcont}>
                         <GalCard handleOnClick={() => {
                             setOpen(true)
-                            setAltk(true)
+                            setAltk(false)
+                            setExemeet(false)
+                            setLogodes(false)
+                            setOri(false)
+                            setPhoto(true)
+                            setTcday(false)
+                            setTsv(false)
                         }}
+                        galimg={tph}
                         />
 
                     </div>
                     <div className={styles.galcardcont}>
                         <GalCard handleOnClick={() => {
                             setOpen(true)
-                            setAltk(true)
+                            setAltk(false)
+                            setExemeet(false)
+                            setLogodes(false)
+                            setOri(false)
+                            setPhoto(false)
+                            setTcday(true)
+                            setTsv(false)
                         }}
+                        galimg={ttd}
                         />
 
                     </div>
-                    <div className={styles.galcardcont}>
-                        <GalCard handleOnClick={() => {
-                            setOpen(true)
-                            setAltk(true)
-                        }}
-                        />
-
-                    </div>
+                    
                 </div>
 
             </div>

@@ -8,7 +8,7 @@ export default function GalCard(props) {
             <img src={props.galimg} alt='hau' className={styles.galcardimg}/>
         </div>
         <div className={styles.galcardbutcont}>
-            <button value={props.fol} onClick={props.handleOnClick} type='click' className={styles.galcardbut}>View More</button>
+            <button value={props.fol} onClick={props.handleOnClick} type='click' className={styles.galcardbut}>View Photos</button>
         </div>
     </div>
   )

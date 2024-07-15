@@ -1,5 +1,9 @@
 import styles from './nopage.module.css';
+import { useEffect } from 'react';
 export default function NoPage(){
+    useEffect(() => {
+        window.scrollTo(0,0);
+      },[])
     return(
     <div className={styles.titlecont}>
         <div className={styles.titleheadcont}>

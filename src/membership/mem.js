@@ -12,7 +12,7 @@ export default function Membership(){
     const [formData, setFormData] = useState({
         name: '',
         email: '',
-        contact: '',
+        phone: ''
       });
     
       const handleChange = (e) => {

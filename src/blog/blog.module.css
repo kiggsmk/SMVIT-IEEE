@@ -1,0 +1,24 @@
+.titlecont{
+    width: 100%;
+    height: 500px;
+    background-image: url("./homebg.png");
+    display: inline-flex;
+    margin-bottom: 150px;
+  }
+  .titleheadcont{
+    width: 100%;
+    margin: auto;
+  }
+  
+  .titlehead1{
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 200%;
+  }
+  .titlehead2{
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    font-size: 700%;
+  }
