@@ -48,7 +48,7 @@
    width: 400px;
    text-align: center;
    z-index: 30;
-   animation: moveup ease 3s;
+   animation: moveup ease 5s;
          animation-iteration-count: 1;
          animation-fill-mode: forwards;
  }
@@ -106,6 +106,10 @@
    50%{
        margin-top: initial;
        opacity: 1;
+   }
+   85%{
+    margin-top: -300px;
+    opacity: 1;
    }
    
    100%{
