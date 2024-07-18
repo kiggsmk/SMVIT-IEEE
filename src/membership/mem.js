@@ -138,7 +138,7 @@ export default function Membership(){
                 </div>
                 <div className={styles.memreachbody}>
                 <div className={styles.butcont}>
-                    <a className={styles.but} href="mailto:someone@example.com">
+                    <a className={styles.but} href="mailto:Phaninder_ec@sirmvit.edu">
                         <div className={styles.butsrcont}><p className={styles.butsr}>01</p></div>
                         <div className={styles.buttextcont}><p className={styles.buttext}>Pharinder Ravi Parimi</p></div>
                         <div className={styles.arrowcont}><img className={styles.arrow} src={mail} alt="soc"/></div>
@@ -146,7 +146,7 @@ export default function Membership(){
                     </div>
                     <hr className={styles.abbutline}/>
                     <div className={styles.butcont}>
-                    <a className={styles.but} href="mailto:someone@example.com">
+                    <a className={styles.but} href="mailto:ManojKulkarni@ieee.org">
                         <div className={styles.butsrcont}><p className={styles.butsr}>02</p></div>
                         <div className={styles.buttextcont}><p className={styles.buttext}>Manoj S Kulkarni</p></div>
                         <div className={styles.arrowcont}><img className={styles.arrow} src={mail} alt="soc"/></div>
@@ -154,7 +154,7 @@ export default function Membership(){
                     </div>
                     <hr className={styles.abbutline}/>
                     <div className={styles.butcont}>
-                    <a className={styles.but} href="mailto:someone@example.com">
+                    <a className={styles.but} href="mailto:1mv21ec039@sirmvit.edu">
                         <div className={styles.butsrcont}><p className={styles.butsr}>03</p></div>
                         <div className={styles.buttextcont}><p className={styles.buttext}>Chethan J Vinayaka</p></div>
                         <div className={styles.arrowcont}><img className={styles.arrow} src={mail} alt="soc"/></div>

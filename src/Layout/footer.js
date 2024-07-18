@@ -1,4 +1,5 @@
 import styles from './nav.module.css';
+import React,{useState} from 'react';
 import li from './linkedin.png';
 import fb from './facebook.png';
 import ig from './instagram.png'
@@ -7,6 +8,33 @@ import clglogo from './mvitlogo.jpg';
 import ieeeblr from './ieeeblrlogo.png';
 
 export default function Footer(){
+  const [emailData, setEmailData] = useState({
+    email: ''
+  });
+
+  const handleChange = (e) => {
+    setEmailData({
+      ...emailData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const response = await fetch('http://localhost:3004/emailcoll', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(emailData),
+    });
+    if (response.ok) {
+      alert("Data submitted successfully!")
+    }
+    else {
+      alert("mm")
+    }
+  };
     return(
         <><footer className={styles.footcont}>
         <div className={styles.chikkacont}>
@@ -58,16 +86,16 @@ export default function Footer(){
           </div>
 
           <div className={styles.dodda3}>
-            <div className={styles.subs}>
-              <h3 className={styles.substext}>Stay updated on our all upcoming events!</h3>
-              <input className={styles.subsinput} placeholder="email@xyz.com"/>
-              <button type="submit" className={styles.subsbut}>Subscribe</button>
-            </div>
+            <form onSubmit={handleSubmit} className={styles.subs}>
+              <label  className={styles.substext}>Stay updated on our all upcoming events!</label>
+              <input onChange={handleChange} value={emailData.email} name="email" className={styles.subsinput} placeholder="email@xyz.com"/>
+              <button  type="submit" className={styles.subsbut}>Subscribe</button>
+            </form>
             <div className={styles.social}>
               <h3 className={styles.socialtext}>Connect us on</h3>
-              <img className={styles.socialicon} alt='linkedin' src={li}/>
-              <img className={styles.socialicon} alt='facebook' src={fb}/>
-              <img className={styles.socialicon} alt='instagram' src={ig}/>
+             <a href='https://www.linkedin.com/company/ieee-mvit/'> <img className={styles.socialicon} alt='linkedin' src={li}/></a>
+             <img className={styles.socialicon} alt='facebook' src={fb}/>
+             <a href='https://www.instagram.com/ieee_sirmvit?igsh=MWlua3JhaWFnOTFhcw=='><img className={styles.socialicon} alt='instagram' src={ig}/></a>
               
             </div>
 
