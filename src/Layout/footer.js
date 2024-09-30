@@ -2,37 +2,37 @@ import styles from './nav.module.css';
 import React,{useState} from 'react';
 import li from './linkedin.png';
 import fb from './facebook.png';
-import ig from './instagram.png'
+import ig from './instagram.png';
 import {NavLink} from "react-router-dom";
 import clglogo from './mvitlogo.jpg';
 import ieeeblr from './ieeeblrlogo.png';
 
 export default function Footer(){
-  const [emailData, setEmailData] = useState({
-    email: ''
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: ''
   });
 
   const handleChange = (e) => {
-    setEmailData({
-      ...emailData,
+    setFormData({
+      ...formData,
       [e.target.name]: e.target.value,
     });
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch('http://localhost:3004/emailcoll', {
+    const response = await fetch('http://localhost:3001/emailcoll', {
       method: 'POST',
+      mode:"no-cors",
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify(emailData),
+      body: JSON.stringify(formData),
     });
     if (response.ok) {
-      alert("Data submitted successfully!")
-    }
-    else {
-      alert("mm")
+      alert("Data Saved Successfully!")
     }
   };
     return(
@@ -88,7 +88,7 @@ export default function Footer(){
           <div className={styles.dodda3}>
             <form onSubmit={handleSubmit} className={styles.subs}>
               <label  className={styles.substext}>Stay updated on our all upcoming events!</label>
-              <input onChange={handleChange} value={emailData.email} name="email" className={styles.subsinput} placeholder="email@xyz.com"/>
+              <input onChange={handleChange} value={formData.email} name="email" className={styles.subsinput} placeholder="email@xyz.com"/>
               <button  type="submit" className={styles.subsbut}>Subscribe</button>
             </form>
             <div className={styles.social}>

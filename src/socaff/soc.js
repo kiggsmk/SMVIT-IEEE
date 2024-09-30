@@ -1,6 +1,7 @@
 import styles from './components/soc.module.css';
 import Soccont from './components/container';
-import rep1 from './ravi.jpeg';
+import repcom from './ravi.jpeg';
+import reppho from './repphotonics.jpg';
 import React, {useEffect} from 'react';
 import p1 from './comsoc poster.png';
 import p2 from './photonicsposter.png';
@@ -28,8 +29,8 @@ export default function Soc(){
                     theoretical understanding and practical application, fostering skill development and cutting-edge
                     research. Connect with peers, industry professionals, and experts, exploring innovation in
                     communication technology." 
-                    rep={rep1}
-                    teamdesc="Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. "/>
+                    rep={repcom}
+                    teamdesc="Members of the IEEE Communication Society at Sir MVIT are passionate students from diverse engineering disciplines, actively involved in research, events, and collaborative projects. Under the guidance of Mr. Pharinder Ravi P, a communication systems expert and dedicated mentor, they advance knowledge, organize workshops, and foster professional growth in the field of communications. "/>
                 </div>
 
                 <div className={styles.soc1}>
@@ -41,8 +42,8 @@ export default function Soc(){
                     including optics, lasers, and fiber optics.
                     Join us to engage with fellow enthusiasts, learn from industry experts, and contribute to
                     groundbreaking research in photonics, shaping the future of this dynamic field." 
-                    rep={rep1}
-                    teamdesc="Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. "/>
+                    rep={reppho}
+                    teamdesc="Members of the IEEE Photonics Society at Sir MVIT are dedicated students from various engineering backgrounds, engaging in research, events, and collaborative projects. Under the leadership of Dr. Vijayashri B, an expert in photonics, they advance their knowledge, organize workshops, and foster professional growth in the field of photonics."/>
                 </div>
 
                 <div className={styles.soc1}>
@@ -53,8 +54,8 @@ export default function Soc(){
                     technology. Through mentorship programs, networking events, and workshops, WIE fosters a culture
                     of inclusivity, skill development, and leadership among its members. Join us to connect with inspiring female leaders, access valuable resources, and pave the way for
                     a more diverse and inclusive future in engineering." 
-                    rep={rep1}
-                    teamdesc="Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. "/>
+                    rep='img'
+                    teamdesc="Members of the Women in Engineering Affinity Group at Sir MVIT are driven students from diverse engineering disciplines, actively involved in mentorship, events, and networking. Guided by a committed faculty advisor, they promote gender diversity, support professional development, and create a supportive community for women in engineering fields. "/>
                 </div>
 
             </div>

@@ -51,7 +51,7 @@ app.post('/regmem', async (req, res) => {
 
     worksheet.columns = { header: 'Email', key: 'email' }
   
-  worksheet.addRow({ email});
+  worksheet.addRow({email});
 
    
     await workbook.xlsx.writeFile(filePath);

@@ -107,13 +107,13 @@
        margin-top: initial;
        opacity: 1;
    }
-   85%{
+   83%{
     margin-top: -600px;
     opacity: 1;
    }
    
    100%{
-       margin-top: -700px;
+       margin-top: -800px;
        opacity: 0;
    }
  }
