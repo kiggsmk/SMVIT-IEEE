@@ -1,5 +1,5 @@
 import styles from './soc.module.css';
-import Card from '../../home/components/card';
+// import Card from '../../home/components/card';
 import React, { useState } from 'react';
 
 export default function Soccont(props){
